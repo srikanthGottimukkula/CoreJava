@@ -1,0 +1,25 @@
+package streams;
+
+import java.util.*;
+
+//optional deals with null pointer exceptions
+
+public class OptionalDemo {
+
+	public static void main(String[] args) {
+
+		Customers customer = new Customers(101,"jhon",null, Arrays.asList("567893","8766543"));
+		
+		//empty 
+		Optional<Object> emptyOptional = Optional.empty();
+		System.out.println(emptyOptional);
+		
+		//of
+		Optional<Object> emptyOptional1 = Optional.of(customer.getEmail());
+		System.out.println(emptyOptional1);
+		
+		
+		
+		
+	}
+}

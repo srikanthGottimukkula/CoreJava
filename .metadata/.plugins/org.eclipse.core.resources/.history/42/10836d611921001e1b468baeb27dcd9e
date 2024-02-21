@@ -1,0 +1,26 @@
+package streams;
+
+import java.util.*;
+
+public class ForEach {
+
+	public static void main(String[] args) {
+
+		List<String> list = new ArrayList<>();
+		list.add("srikanth");
+		list.add("abhiram");
+		list.add("srikrishna");
+		list.add("stevjobs");
+		
+		//normal way 
+		 for (String string : list) {
+			System.out.println(string);
+		}
+		
+		
+		
+		
+		
+	}
+
+}

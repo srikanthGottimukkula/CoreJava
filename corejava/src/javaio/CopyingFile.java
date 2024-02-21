@@ -1,0 +1,31 @@
+package javaio;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class CopyingFile {
+	//COPYING FILE FROM ONE FILE UPPER CASE AND ANOTHER FILE LOWER CASE
+	
+	public static void main(String[] args) throws FileNotFoundException, IOException{
+
+		FileInputStream fis1 = new FileInputStream("C://Users//Srikanth Gmk//OneDrive//Documents//Test.txt");
+		FileOutputStream fos1 = new FileOutputStream("C://Users//Srikanth Gmk//OneDrive//Documents//Test2.txt");
+
+		int a;
+		while ((a = fis1.read()) != -1) {
+
+			if (a >= 65 && a <= 90)
+				fos1.write(a + 32);
+
+			else
+				fos1.write(a);
+
+		}
+		fis1.close();
+		fos1.close();
+
+	}
+
+}

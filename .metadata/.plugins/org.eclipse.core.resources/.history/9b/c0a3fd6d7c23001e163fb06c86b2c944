@@ -1,0 +1,22 @@
+package streams;
+
+import java.util.*;
+import java.util.stream.Stream;
+import java.util.stream.*;
+
+public class EkartDataBase {
+
+	public static List<Customers> getAll() {
+		return Stream.of(
+
+				new Customers(101, "john", "jhon@gmail.com", Arrays.asList("9502900547", "772690394")),
+				new Customers(101, "john", "jhon@gmail.com", Arrays.asList("9502900547", "772690394")),
+				new Customers(101, "john", "jhon@gmail.com", Arrays.asList("9502900547", "772690394")),
+				new Customers(101, "john", "jhon@gmail.com", Arrays.asList("9502900547", "772690394")),
+				new Customers(101, "john", "jhon@gmail.com", Arrays.asList("9502900547", "772690394"))
+
+		).collect(Collectors.toList());
+
+	}
+
+}

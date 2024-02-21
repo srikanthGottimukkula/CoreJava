@@ -1,0 +1,29 @@
+package streams;
+import java.util.*;
+
+public class Filters {
+
+	public static void main(String[] args) {
+		
+		List<String> list = new ArrayList<>();
+		list.add("srikanth");
+		list.add("abhiram");
+		list.add("srikrishna");
+		list.add("stevjobs");
+		
+		//normal way
+		 for (String st : list) {
+			if(st.startsWith("sr")) {
+				System.out.println(st);
+			}
+		}
+		 
+		 
+		 //streams using filer method
+		 
+		 list.stream().filter(t->t.startsWith("a")).forEach(t->System.out.println(t));
+		 
+		 
+	}
+
+}
